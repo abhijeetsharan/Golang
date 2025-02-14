@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+type User struct {
+	Name   string
+	Email  string
+	Status bool
+	Age    int
+}
+
 func main() {
 	fmt.Println("Structs in Golang")
 
@@ -10,11 +17,4 @@ func main() {
 	fmt.Printf("abhijeet details are: %+v\n", abhijeet)
 	fmt.Printf("Name is %v and email is %v.", abhijeet.Name, abhijeet.Email)
 
-}
-
-type User struct {
-	Name   string
-	Email  string
-	Status bool
-	Age    int
 }
