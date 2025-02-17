@@ -16,7 +16,7 @@ func main() {
 }
 
 func PerformGetRequest(){
-	const myurl = "https://jsonplaceholder.typicode.com/todos/1"
+	const myurl = "https://localhost:8000/get"
 
 	response, err := http.Get(myurl)
 	if err != nil {
